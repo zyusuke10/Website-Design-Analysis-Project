@@ -92,44 +92,6 @@ class WordRecognizer:
             exclusion_regions.append((x1, y1, x2, y2))
         return exclusion_regions
     
-def main():
-    dir_path_india = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/india'
-    dir_path_usa = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/usa'
-    dir_path_japan = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/japan'
-
-    if os.path.exists(dir_path_japan) and os.path.isdir(dir_path_japan):
-        japan = [os.path.join(dir_path_japan, path) for path in os.listdir(dir_path_japan)]
-        japan.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/japan/.DS_Store')
-    else:
-        print(f"The path {dir_path_japan} does not exist or is not a directory")
-
-    if os.path.exists(dir_path_india) and os.path.isdir(dir_path_india):
-        india = [os.path.join(dir_path_india, path) for path in os.listdir(dir_path_india)]
-        india.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/india/.DS_Store')
-    else:
-        print(f"The path {dir_path_india} does not exist or is not a directory")
-
-    if os.path.exists(dir_path_usa) and os.path.isdir(dir_path_usa):
-        usa = [os.path.join(dir_path_usa, path) for path in os.listdir(dir_path_usa)]
-        usa.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/usa/.DS_Store')
-    else:
-        print(f"The path {dir_path_usa} does not exist or is not a directory")
-    
-    # for item in india:
-    #     image_wr = LoadImage(item)
-    #     print(image_wr)
-        
-    print(len(japan))
-    print(len(india))
-    print(len(usa))
-
-
-if __name__ == "__main__":
-    main()
-
-'/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/japan/.DS_Store'
-'/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/india/.DS_Store'
-'/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/usa/.DS_Store',
 
 
 
