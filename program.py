@@ -252,25 +252,25 @@ def showDistribution(websites, countries):
 
 def main():
 
-    dir_path_india = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/india'
-    dir_path_usa = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/usa'
-    dir_path_japan = '/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/japan'
+    dir_path_india = ''
+    dir_path_usa = ''
+    dir_path_japan = ''
 
     if os.path.exists(dir_path_japan) and os.path.isdir(dir_path_japan):
         japan = [os.path.join(dir_path_japan, path) for path in os.listdir(dir_path_japan)]
-        japan.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/japan/.DS_Store')
+        japan.remove('')
     else:
         print(f"The path {dir_path_japan} does not exist or is not a directory")
 
     if os.path.exists(dir_path_india) and os.path.isdir(dir_path_india):
         india = [os.path.join(dir_path_india, path) for path in os.listdir(dir_path_india)]
-        india.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/india/.DS_Store')
+        india.remove('')
     else:
         print(f"The path {dir_path_india} does not exist or is not a directory")
 
     if os.path.exists(dir_path_usa) and os.path.isdir(dir_path_usa):
         usa = [os.path.join(dir_path_usa, path) for path in os.listdir(dir_path_usa)]
-        usa.remove('/Users/zyusuke/Desktop/ICU/卒論研究/卒論研究/samples/usa/.DS_Store')
+        usa.remove('')
     else:
         print(f"The path {dir_path_usa} does not exist or is not a directory")
 
